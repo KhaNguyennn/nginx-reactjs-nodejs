@@ -8,7 +8,7 @@ RUN apt update -y \
     && apt-get install python-certbot-nginx -y \
     && apt-get clean
 
-EXPOSE 80
+EXPOSE 90
 
 STOPSIGNAL SIGTERM
 

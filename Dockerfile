@@ -27,6 +27,6 @@ COPY deploy/nginx.conf /etc/nginx/nginx.conf
 
 WORKDIR /usr/share/nginx/html
 COPY --from=build /app/build .
-EXPOSE 90
+EXPOSE 80
 
 ENTRYPOINT [ "nginx", "-g", "daemon off;"]

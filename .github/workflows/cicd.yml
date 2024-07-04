@@ -30,7 +30,7 @@ jobs:
           script: |-
             sudo apt update
             sudo docker stop $(docker ps -a -q) || true
-            sudo docker rm $(docker ps -a -q) } || true
+            sudo docker rm $(docker ps -a -q) || true
             cd /home/nginx-reactjs-nodejs
             git checkout master
             git pull
